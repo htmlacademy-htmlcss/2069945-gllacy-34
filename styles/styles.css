@@ -1,0 +1,84 @@
+@font-face {
+  font-family: "inter";
+  font-weight: 400;
+  font-style: normal;
+  src: url("./fonts/inter-400.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "inter";
+  font-weight: 700;
+  font-style: normal;
+  src: url("./fonts/inter-700.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "inter";
+  font-weight: 900;
+  font-style: normal;
+  src: url("./fonts/inter-900.woff2") format("woff2");
+  font-display: swap;
+}
+
+
+
+
+
+
+
+
+.{
+  box-sizing: border-box;
+  line-height: 1;
+  padding: 0;
+  margin: 0;
+}
+
+.body {
+font-size: 16px;
+font-family: ;
+background-color: #FEAFC3;
+}
+
+.container {
+max-width: 1170px;
+margin: 0 auto;
+
+}
+
+visually-hidden {
+display: none;
+
+
+}
+
+.header .container {
+min-height: 104px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+
+
+}
+
+.header__nav {
+display: flex;
+align-items: center;
+justify-content: flex-start;
+
+}
+
+.header-logo-link {
+margin-right: 32px;
+
+}
+
+.navigation-list {
+display: flex;
+justify-content: flex-start;
+align-items: center;
+list-style: none;
+
+}
