@@ -196,7 +196,23 @@ align-items: center;
   margin-right: 16px;
 }
 
-.icon-footer {
+.icon-search {
+width: 16px;
+height: 17px;
+}
+
+
+.icon {
+fill: #2D3440;
+
+}
+
+.icon:hover {
+  fill: red;
+
+  }
+
+.icon-header {
   margin-right: 6px;
 
 }
