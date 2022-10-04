@@ -242,7 +242,7 @@ body {
 }
 
 .cart-price {
-  font-family: 'Inter';
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 20px;
@@ -1650,11 +1650,13 @@ body {
 }
 
 
-.range-toggle::after {
+.range-toggle::before {
+  content: "";
   width: 4px;
   height: 4px;
-
+  border-radius: 50%;
   background: #FCFCFC;
+  z-index: 1;
 }
 
 
