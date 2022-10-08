@@ -25,6 +25,24 @@
             <ul class="navigation-list">
               <li class="navigation-item">
                 <a class="navigation-link" href="catalog.html">Каталог</a>
+
+                <div class="popover popover-content-catalog">
+                  <h2 class="catalog-title-pp">Новинки</h2>
+                  <ul class="catalog-list-pp">
+                    <li class="catalog-item-pp">
+                      <a class="catalog-link-pp" href="catalog.html">Сливочное</a>
+                    </li>
+                    <li class="catalog-item-pp">
+                      <a class="catalog-link-pp" href="catalog.html">Щербеты</a>
+                    </li>
+                    <li class="catalog-item-pp">
+                      <a class="catalog-link-pp" href="catalog.html">Фруктовый лед</a>
+                    </li>
+                    <li class="catalog-item-pp">
+                      <a class="catalog-link-pp" href="catalog.html">Мелорин</a>
+                    </li>
+                  </ul>
+                </div>
               </li>
               <li class="navigation-item">
                 <a class="navigation-link" href="catalog.html">Доставка</a>
@@ -45,10 +63,29 @@
             <svg class="icon">
               <use xlink:href="./images/sprite.svg#icon-search"></use>
             </svg>
-
-
-
           </button>
+
+
+
+          <div class="popover popover-search">
+
+
+            <form class="search-form" action="https://echo.htmlacademy.ru/" method="post">
+
+              <input class="field field-search" placeholder="Поиск по сайту" type="search" name="search"
+                id="subscribe-email" required>
+
+            </form>
+
+
+
+          </div>
+
+
+
+
+
+
 
           <button type="button" class="header__login header__btn">
             <svg class="icon">
@@ -57,6 +94,65 @@
 
             Вход
           </button>
+
+
+          <div class="popover popover-login">
+
+            <div class="popover-content-login">
+              <h2 class="popover-title">Личный кабинет</h2>
+              <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
+                <p class="field-group-login">
+                  <label class="visually-hidden" for="subscribe-email">email</label>
+                  <input class="field field-subscribe-login" placeholder="email@example.com" type="email"
+                    name="subscribe-email" id="subscribe-email">
+                </p>
+
+                <p class="field-group-login">
+                  <label class="visually-hidden" for="auth-password">Пароль</label>
+                  <input class="field field-subscribe-login" placeholder="......" type="password" name="auth-password"
+                    id="auth-password">
+                </p>
+              </form>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+              <div class="login-pp">
+                <a class="button-second button-login" href="#">Войти</a>
+                <div class="login-links">
+                  <a class="login-link" href="#">Забыли пароль?</a>
+                  <a class="login-link" href="#">Регистрация</a>
+                </div>
+              </div>
+
+
+            </div>
+
+          </div>
+
+
+
+
+
+
+
+
 
           <button type="button" class="header__cart header__btn">
 
@@ -70,6 +166,81 @@
               2 товара
             </div>
           </button>
+
+
+          <div class="popover popover-cart">
+
+            <div class="popover-content">
+              <h2 class="popover-title">Корзина</h2>
+
+
+              <ul class="cart-items-list">
+                <li class="cart-item">
+                  <img class="ice-pp" src="images/ice-cart-1.png" width="145" height="37" alt="Ice-card.">
+
+
+                  <div class="cart-item-description">
+                    <p class="cart-item-title">Малинка</p>
+
+                    <span class="cart-item-price">1 кг х 310 ₽</span>
+                  </div>
+
+
+                  <p class="cart-price-pp">310 ₽</p>
+
+
+                  <button type="button" class="popover-close-button">
+
+
+                    <span class="visually-hidden">Удалить из корзины</span>
+                  </button>
+                </li>
+
+
+                <li class="cart-item">
+                  <img class="ice-pp" src="images/ice-cart-4.png" width="145" height="37" alt="Ice-card.">
+
+
+                  <div class="cart-item-description">
+                    <p class="cart-item-title">Бабл-гам</p>
+
+                    <span class="cart-item-price">1,5 кг х 320 ₽</span>
+                  </div>
+
+
+                  <p class="cart-price-pp">480 ₽</p>
+
+
+                  <button type="button" class="popover-close-button">
+
+
+                    <span class="visually-hidden">Удалить из корзины</span>
+                  </button>
+                </li>
+
+              </ul>
+
+              <div class="cart-arrange">
+                <a class="button-second button-arrange" href="#">Оформить заказ</a>
+                <span class="cart-total">Итого: 790 ₽</span>
+
+              </div>
+
+
+            </div>
+          </div>
+
+          <div class="popover popover-void">
+            <button class="button-light">
+
+              <span class="visually-hidden">Закрыть</span>
+            </button>
+            <span class="popover-content-void">
+              Ваша корзина пока<br> пуста
+            </span>
+          </div>
+
+
 
 
         </div>
@@ -91,8 +262,8 @@
                 <li class="active">
                   <h3 class="carousel__content__title">Нежный пломбир
                     с клубничным джемом</h3>
-                  <p class="carousel__content__description">Натуральное мороженое из свежих сливок
-                    и молока с вкуснейшим клубничным джемом – это идеальный десерт для всей семьи.</p>
+                  <p class="carousel__content__description">Натуральное мороженое из свежих сливок<br>
+                    и молока с вкуснейшим клубничным джемом<br> – это идеальный десерт для всей семьи.</p>
                   <a class="button button-order" href="#">Заказать</a>
                 </li>
                 <li>
@@ -127,13 +298,13 @@
 
 
                 <ul>
-                  <li class="active">
+                  <li class="first-slide active">
                     <img src="./images/ice-cream-1.png" alt="First slide">
                   </li>
-                  <li>
+                  <li class="second-slide">
                     <img src="./images/ice-cream-2.png" alt="Second slide">
                   </li>
-                  <li>
+                  <li class="third-slide">
                     <img src="./images/ice-cream-3.png" alt="Third slide">
                   </li>
 
@@ -248,7 +419,7 @@
               <span class="catalog-cart-d">Сливочное мороженое с малиновым джемом</span>
               <div class="catalog-cart-price">
                 <b class="cart-price">310 ₽/кг</b>
-                <a class="cart-price-link">
+                <a class="cart-price-link" href="#">
                   <svg width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd" clip-rule="evenodd"
                       d="M1.16667 0.25C0.798477 0.25 0.5 0.548477 0.5 0.916667C0.5 1.28486 0.798477 1.58333 1.16667 1.58333H2.93794L3.40537 3.91872C3.40821 3.93667 3.41176 3.95438 3.416 3.97182L4.38338 8.80515L4.3835 8.80571C4.46706 9.22572 4.69562 9.60299 5.02921 9.87153C5.36111 10.1387 5.77595 10.2813 6.20183 10.2748H11.8225C12.2484 10.2813 12.6633 10.1387 12.9952 9.87153C13.3289 9.60287 13.5575 9.22538 13.641 8.80515L13.641 8.80515L13.642 8.80016L14.5691 3.93872C14.6063 3.74355 14.5545 3.54195 14.4279 3.38887C14.3012 3.23578 14.1129 3.14716 13.9142 3.14716H4.61072L4.1381 0.785829C4.07574 0.474257 3.80215 0.25 3.4844 0.25H1.16667ZM5.69098 8.54444L4.87759 4.4805H13.1084L12.3328 8.54736C12.31 8.65988 12.2485 8.7609 12.1591 8.83291C12.0691 8.90535 11.9565 8.94383 11.841 8.94162L11.841 8.94149H11.8282H6.19614V8.94137L6.18337 8.94162C6.06787 8.94383 5.95528 8.90535 5.8653 8.83291C5.77531 8.76048 5.71368 8.6587 5.69117 8.5454L5.69098 8.54444ZM4.55739 12.5054C4.55739 11.8175 5.1151 11.2597 5.80307 11.2597C6.49105 11.2597 7.04876 11.8175 7.04876 12.5054C7.04876 13.1934 6.49105 13.7511 5.80307 13.7511C5.1151 13.7511 4.55739 13.1934 4.55739 12.5054ZM10.9307 12.5054C10.9307 11.8175 11.4884 11.2597 12.1764 11.2597C12.8644 11.2597 13.4221 11.8175 13.4221 12.5054C13.4221 13.1934 12.8644 13.7511 12.1764 13.7511C11.4884 13.7511 10.9307 13.1934 10.9307 12.5054Z"
@@ -264,7 +435,7 @@
               <span class="catalog-cart-d">Фисташковый пломбир с кусочками шоколада</span>
               <div class="catalog-cart-price">
                 <b class="cart-price">310 ₽/кг</b>
-                <a class="cart-price-link">
+                <a class="cart-price-link" href="#">
                   <svg width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd" clip-rule="evenodd"
                       d="M1.16667 0.25C0.798477 0.25 0.5 0.548477 0.5 0.916667C0.5 1.28486 0.798477 1.58333 1.16667 1.58333H2.93794L3.40537 3.91872C3.40821 3.93667 3.41176 3.95438 3.416 3.97182L4.38338 8.80515L4.3835 8.80571C4.46706 9.22572 4.69562 9.60299 5.02921 9.87153C5.36111 10.1387 5.77595 10.2813 6.20183 10.2748H11.8225C12.2484 10.2813 12.6633 10.1387 12.9952 9.87153C13.3289 9.60287 13.5575 9.22538 13.641 8.80515L13.641 8.80515L13.642 8.80016L14.5691 3.93872C14.6063 3.74355 14.5545 3.54195 14.4279 3.38887C14.3012 3.23578 14.1129 3.14716 13.9142 3.14716H4.61072L4.1381 0.785829C4.07574 0.474257 3.80215 0.25 3.4844 0.25H1.16667ZM5.69098 8.54444L4.87759 4.4805H13.1084L12.3328 8.54736C12.31 8.65988 12.2485 8.7609 12.1591 8.83291C12.0691 8.90535 11.9565 8.94383 11.841 8.94162L11.841 8.94149H11.8282H6.19614V8.94137L6.18337 8.94162C6.06787 8.94383 5.95528 8.90535 5.8653 8.83291C5.77531 8.76048 5.71368 8.6587 5.69117 8.5454L5.69098 8.54444ZM4.55739 12.5054C4.55739 11.8175 5.1151 11.2597 5.80307 11.2597C6.49105 11.2597 7.04876 11.8175 7.04876 12.5054C7.04876 13.1934 6.49105 13.7511 5.80307 13.7511C5.1151 13.7511 4.55739 13.1934 4.55739 12.5054ZM10.9307 12.5054C10.9307 11.8175 11.4884 11.2597 12.1764 11.2597C12.8644 11.2597 13.4221 11.8175 13.4221 12.5054C13.4221 13.1934 12.8644 13.7511 12.1764 13.7511C11.4884 13.7511 10.9307 13.1934 10.9307 12.5054Z"
@@ -281,7 +452,7 @@
                 с черничным джемом</span>
               <div class="catalog-cart-price">
                 <b class="cart-price">310 ₽/кг</b>
-                <a class="cart-price-link">
+                <a class="cart-price-link" href="#">
                   <svg width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd" clip-rule="evenodd"
                       d="M1.16667 0.25C0.798477 0.25 0.5 0.548477 0.5 0.916667C0.5 1.28486 0.798477 1.58333 1.16667 1.58333H2.93794L3.40537 3.91872C3.40821 3.93667 3.41176 3.95438 3.416 3.97182L4.38338 8.80515L4.3835 8.80571C4.46706 9.22572 4.69562 9.60299 5.02921 9.87153C5.36111 10.1387 5.77595 10.2813 6.20183 10.2748H11.8225C12.2484 10.2813 12.6633 10.1387 12.9952 9.87153C13.3289 9.60287 13.5575 9.22538 13.641 8.80515L13.641 8.80515L13.642 8.80016L14.5691 3.93872C14.6063 3.74355 14.5545 3.54195 14.4279 3.38887C14.3012 3.23578 14.1129 3.14716 13.9142 3.14716H4.61072L4.1381 0.785829C4.07574 0.474257 3.80215 0.25 3.4844 0.25H1.16667ZM5.69098 8.54444L4.87759 4.4805H13.1084L12.3328 8.54736C12.31 8.65988 12.2485 8.7609 12.1591 8.83291C12.0691 8.90535 11.9565 8.94383 11.841 8.94162L11.841 8.94149H11.8282H6.19614V8.94137L6.18337 8.94162C6.06787 8.94383 5.95528 8.90535 5.8653 8.83291C5.77531 8.76048 5.71368 8.6587 5.69117 8.5454L5.69098 8.54444ZM4.55739 12.5054C4.55739 11.8175 5.1151 11.2597 5.80307 11.2597C6.49105 11.2597 7.04876 11.8175 7.04876 12.5054C7.04876 13.1934 6.49105 13.7511 5.80307 13.7511C5.1151 13.7511 4.55739 13.1934 4.55739 12.5054ZM10.9307 12.5054C10.9307 11.8175 11.4884 11.2597 12.1764 11.2597C12.8644 11.2597 13.4221 11.8175 13.4221 12.5054C13.4221 13.1934 12.8644 13.7511 12.1764 13.7511C11.4884 13.7511 10.9307 13.1934 10.9307 12.5054Z"
@@ -299,7 +470,7 @@
                 со сладкой посыпкой</span>
               <div class="catalog-cart-price">
                 <b class="cart-price">310 ₽/кг</b>
-                <a class="cart-price-link">
+                <a class="cart-price-link" href="#">
                   <svg width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd" clip-rule="evenodd"
                       d="M1.16667 0.25C0.798477 0.25 0.5 0.548477 0.5 0.916667C0.5 1.28486 0.798477 1.58333 1.16667 1.58333H2.93794L3.40537 3.91872C3.40821 3.93667 3.41176 3.95438 3.416 3.97182L4.38338 8.80515L4.3835 8.80571C4.46706 9.22572 4.69562 9.60299 5.02921 9.87153C5.36111 10.1387 5.77595 10.2813 6.20183 10.2748H11.8225C12.2484 10.2813 12.6633 10.1387 12.9952 9.87153C13.3289 9.60287 13.5575 9.22538 13.641 8.80515L13.641 8.80515L13.642 8.80016L14.5691 3.93872C14.6063 3.74355 14.5545 3.54195 14.4279 3.38887C14.3012 3.23578 14.1129 3.14716 13.9142 3.14716H4.61072L4.1381 0.785829C4.07574 0.474257 3.80215 0.25 3.4844 0.25H1.16667ZM5.69098 8.54444L4.87759 4.4805H13.1084L12.3328 8.54736C12.31 8.65988 12.2485 8.7609 12.1591 8.83291C12.0691 8.90535 11.9565 8.94383 11.841 8.94162L11.841 8.94149H11.8282H6.19614V8.94137L6.18337 8.94162C6.06787 8.94383 5.95528 8.90535 5.8653 8.83291C5.77531 8.76048 5.71368 8.6587 5.69117 8.5454L5.69098 8.54444ZM4.55739 12.5054C4.55739 11.8175 5.1151 11.2597 5.80307 11.2597C6.49105 11.2597 7.04876 11.8175 7.04876 12.5054C7.04876 13.1934 6.49105 13.7511 5.80307 13.7511C5.1151 13.7511 4.55739 13.1934 4.55739 12.5054ZM10.9307 12.5054C10.9307 11.8175 11.4884 11.2597 12.1764 11.2597C12.8644 11.2597 13.4221 11.8175 13.4221 12.5054C13.4221 13.1934 12.8644 13.7511 12.1764 13.7511C11.4884 13.7511 10.9307 13.1934 10.9307 12.5054Z"
@@ -365,8 +536,10 @@
           <div class="index-columns">
             <div class="banner-news">
               <span class="banner-news-text">Новое в нашем блоге</span>
-              <span class="banner-news-discr">10 способов сервировки<br> фруктовых щербетов<br>
-                к столу</span>
+
+
+              <a class="banner-news-link" href="#">10 способов сервировки<br> фруктовых щербетов<br>
+                к столу</a>
             </div>
 
             <div class="border-subscribe">
@@ -377,8 +550,8 @@
 
                 <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
                   <div class="field-subscribe-one">
-                    <input class="field-subscribe" placeholder="email@example.com" type="email" name="subscribe-email"
-                      id="subscribe-email" required>
+                    <input class="field field-subscribe" placeholder="email@example.com" type="email"
+                      name="subscribe-email" id="subscribe-email" required>
                     <button class="button-second button-subscribe" type="submit">Отправить</button>
                   </div>
                 </form>
@@ -392,49 +565,50 @@
       </div>
 
 
-       <!-- Delivery -->
+      <!-- Delivery -->
       <div class="container">
         <section class="delivery">
 
 
-            <h3 class="delivery-title">
-              Доставка любимого<br> мороженого на дом
-            </h3>
-            <span class="delivery-description">Хочется полакомиться любимым десертом,<br>
-              но нет времени съездить в магазин? Закажите<br> доставку мороженого на дом, и курьер<br> привезёт вам ваш
-              заказ в течение часа!</span>
+          <h3 class="delivery-title">
+            Доставка любимого<br> мороженого на дом
+          </h3>
+          <span class="delivery-description">Хочется полакомиться любимым десертом,<br>
+            но нет времени съездить в магазин? Закажите<br> доставку мороженого на дом, и курьер<br> привезёт вам ваш
+            заказ в течение часа!</span>
 
 
 
-            <div class="delivery-forms">
-              <h2 class="visually-hidden">delivery</h2>
-              <p class="delivery-info">Укажите адрес и дату доставки, и мы свяжемся с вами, чтобы подтвердить заказ.</p>
-              <form class="delivery-form" action="https://echo.htmlacademy.ru/" method="post">
-                <p class="field-group">
+          <div class="delivery-forms">
+            <h2 class="visually-hidden">delivery</h2>
+            <p class="delivery-info">Укажите адрес и дату доставки, и мы свяжемся с вами, чтобы подтвердить заказ.</p>
+            <form class="delivery-form" action="https://echo.htmlacademy.ru/" method="post">
+              <p class="field-group">
 
-                  <label class="form-label delivery-form-date" for="delivery-date">
-                    Дата</label>
+                <label class="form-label delivery-form-date" for="delivery-date">
+                  Дата</label>
 
-                  <input class="field" type="text" id="delivery-date" name="delivery-date" placeholder="01.04.2020">
-                </p>
+                <input class="field" type="text" id="delivery-date" name="delivery-date" placeholder="01.04.2020">
+              </p>
 
-                <p class="field-group delivery-form-phone">
-                  <label class="form-label" for="delivery-phone">
-                    Телефон
-                  </label>
-                  <input class="field" type="text" id="delivery-phone" name="delivery-phone"
-                    placeholder="+7 800 999-00-00">
-                </p>
+              <p class="field-group delivery-form-phone">
+                <label class="form-label" for="delivery-phone">
+                  Телефон
+                </label>
+                <input class="field" type="text" id="delivery-phone" name="delivery-phone"
+                  placeholder="+7 800 999-00-00">
+              </p>
 
-                <p class="field-group delivery-form-address">
-                  <label class="form-label" for="delivery-address">
-                    Адрес
-                  </label>
-                  <input class="field" type="text" id="delivery-address" name="delivery-address" placeholder="ул. Большая Конюшенная, 19/8">
-                </p>
-                <button class="button-second button-delivery-send" type="send">Отправить</button>
-              </form>
-            </div>
+              <p class="field-group delivery-form-address">
+                <label class="form-label" for="delivery-address">
+                  Адрес
+                </label>
+                <input class="field" type="text" id="delivery-address" name="delivery-address"
+                  placeholder="ул. Большая Конюшенная, 19/8">
+              </p>
+              <button class="button-second button-delivery-send" type="send">Отправить</button>
+            </form>
+          </div>
 
 
         </section>
@@ -448,7 +622,7 @@
           <h2 class="visually-hidden">contacts-address</h2>
 
           <div class="contacts-address">
-            <p class="contacts-text">Адрес главного офиса и офлайн-магазина:</p>
+            <p class="contacts-text">Адрес главного офиса<br> и офлайн-магазина:</p>
             <b class="contacts-address-text">наб. реки Карповки,<br> 5 лит П, Санкт-Петербург</b>
             <p class="contacts-text">Для заказов по телефону:</p>
 
@@ -519,7 +693,8 @@
 
           <ul class="footer__links-list">
             <li class="footer__links-item">
-              <a class="footer__links-link" href="#">Для поставщиков</a>
+              <span class="link-11"></span>
+              <a class="footer__links-link link-1" href="#">Для поставщиков</a>
             </li>
             <li class="footer__links-item">
               <a class="footer__links-link" href="#">Наши документы</a>
@@ -550,12 +725,47 @@
             <div class="footer__copyright-link">
               <span class="footer__copyright-text">Сделано в
                 <a class="developer-link" href="#">.html academy</a></span>
-              <span class="footer__copyright-text">&#169;<i>2021</i></span>
+              <span class="footer__copyright-text">&#169;<i style="font-style: normal;">2021</i></span>
             </div>
           </div>
         </div>
       </div>
     </footer>
+
+
+
+    <div class="modal-container-close">
+      <div class="modal modal-auth">
+        <button class="modal-close-button">
+          <span class="visually-hidden">Закрыть</span>
+        </button>
+        <section class="modal-content">
+          <h2 class="modal-title">Мы обязательно ответим вам!</h2>
+
+
+          <form class="auth-form" action="https://echo.htmlacademy.ru/" method="post">
+            <p class="field-group-login">
+              <label class="visually-hidden" for="">Имя</label>
+              <input class="auth-form-field field" type="text" id="auth-login" name="auth-login"
+                placeholder="Имя и фамилия">
+            </p>
+            <p class="field-group-login">
+              <label class="visually-hidden" for="subscribe-email">email</label>
+              <input class="field auth-form-field" placeholder="email@example.com" type="email" name="subscribe-email"
+                id="subscribe-email">
+            </p>
+            <p class="field-group-text">
+              <label class="visually-hidden" for="auth-text">Text</label>
+              <input class="field field-subscribe-text" placeholder="В свободной форме" type="text"
+                name="subscribe-email" id="subscribe-email">
+            </p>
+
+          </form>
+
+        </section>
+      </div>
+    </div>
+
   </body>
 
 </html>

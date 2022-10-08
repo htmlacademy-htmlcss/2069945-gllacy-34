@@ -62,19 +62,19 @@
             Вход
           </button>
 
-          <button type="button" class="header__cart header__btn">
+          <div class="header__cart-1">
+            <button type="button" class="header__cart header__btn">
 
-            <span class="visually-hidden">Cart</span>
-            <svg class="icon">
-              <use xlink:href="./images/sprite.svg#icon-cart"></use>
-            </svg>
+              <span class="visually-hidden">Cart</span>
+              <svg class="icon">
+                <use xlink:href="./images/sprite.svg#icon-cart"></use>
+              </svg>
+              <span class="product">2 товара</span>
+
+            </button>
 
 
-            <div class="products">
-              2 товара
-            </div>
-          </button>
-
+          </div>
 
         </div>
 
@@ -179,7 +179,7 @@
 
                   <label class="control">
 
-                     <input class="visually-hidden control-input" type="checkbox" name="ingredient" checked>
+                    <input class="visually-hidden control-input" type="checkbox" name="ingredient" checked>
                     <span class="control-ingredients"></span>
                     <span class="control-label">шоколадные</span>
                   </label>
@@ -221,12 +221,12 @@
 
         <ul class="catalog-inner-list">
           <li class="catalog-inner-item">
-            <img class="ice-cart" src="images/ice-cart-1.png" width="145" height="37" alt="Logo device.">
+            <img class="ice-cart" src="images/ice-cart-1.png" width="145" height="37" alt="Ice-card.">
             <b class="catalog-cart-title">Малинка</b>
             <span class="catalog-cart-d">Сливочное мороженое с малиновым джемом</span>
             <div class="catalog-cart-price">
               <b class="cart-price">310 ₽/кг</b>
-              <a class="cart-price-link">
+              <a class="cart-price-link" href="#">
                 <svg width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" clip-rule="evenodd"
                     d="M1.16667 0.25C0.798477 0.25 0.5 0.548477 0.5 0.916667C0.5 1.28486 0.798477 1.58333 1.16667 1.58333H2.93794L3.40537 3.91872C3.40821 3.93667 3.41176 3.95438 3.416 3.97182L4.38338 8.80515L4.3835 8.80571C4.46706 9.22572 4.69562 9.60299 5.02921 9.87153C5.36111 10.1387 5.77595 10.2813 6.20183 10.2748H11.8225C12.2484 10.2813 12.6633 10.1387 12.9952 9.87153C13.3289 9.60287 13.5575 9.22538 13.641 8.80515L13.641 8.80515L13.642 8.80016L14.5691 3.93872C14.6063 3.74355 14.5545 3.54195 14.4279 3.38887C14.3012 3.23578 14.1129 3.14716 13.9142 3.14716H4.61072L4.1381 0.785829C4.07574 0.474257 3.80215 0.25 3.4844 0.25H1.16667ZM5.69098 8.54444L4.87759 4.4805H13.1084L12.3328 8.54736C12.31 8.65988 12.2485 8.7609 12.1591 8.83291C12.0691 8.90535 11.9565 8.94383 11.841 8.94162L11.841 8.94149H11.8282H6.19614V8.94137L6.18337 8.94162C6.06787 8.94383 5.95528 8.90535 5.8653 8.83291C5.77531 8.76048 5.71368 8.6587 5.69117 8.5454L5.69098 8.54444ZM4.55739 12.5054C4.55739 11.8175 5.1151 11.2597 5.80307 11.2597C6.49105 11.2597 7.04876 11.8175 7.04876 12.5054C7.04876 13.1934 6.49105 13.7511 5.80307 13.7511C5.1151 13.7511 4.55739 13.1934 4.55739 12.5054ZM10.9307 12.5054C10.9307 11.8175 11.4884 11.2597 12.1764 11.2597C12.8644 11.2597 13.4221 11.8175 13.4221 12.5054C13.4221 13.1934 12.8644 13.7511 12.1764 13.7511C11.4884 13.7511 10.9307 13.1934 10.9307 12.5054Z"
@@ -237,31 +237,31 @@
           </li>
 
           <li class="catalog-inner-item">
-            <img class="ice-cart" src="images/ice-cart-2.png" width="145" height="37" alt="Logo device.">
+            <img class="ice-cart" src="images/ice-cart-2.png" width="145" height="37" alt="Ice-card.">
             <b class="catalog-cart-title">Фисташка</b>
             <span class="catalog-cart-d">Фисташковый пломбир с кусочками шоколада</span>
             <div class="catalog-cart-price">
               <b class="cart-price">310 ₽/кг</b>
 
-                <a class="cart-price-link">
-                  <svg width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd" clip-rule="evenodd"
-                      d="M1.16667 0.25C0.798477 0.25 0.5 0.548477 0.5 0.916667C0.5 1.28486 0.798477 1.58333 1.16667 1.58333H2.93794L3.40537 3.91872C3.40821 3.93667 3.41176 3.95438 3.416 3.97182L4.38338 8.80515L4.3835 8.80571C4.46706 9.22572 4.69562 9.60299 5.02921 9.87153C5.36111 10.1387 5.77595 10.2813 6.20183 10.2748H11.8225C12.2484 10.2813 12.6633 10.1387 12.9952 9.87153C13.3289 9.60287 13.5575 9.22538 13.641 8.80515L13.641 8.80515L13.642 8.80016L14.5691 3.93872C14.6063 3.74355 14.5545 3.54195 14.4279 3.38887C14.3012 3.23578 14.1129 3.14716 13.9142 3.14716H4.61072L4.1381 0.785829C4.07574 0.474257 3.80215 0.25 3.4844 0.25H1.16667ZM5.69098 8.54444L4.87759 4.4805H13.1084L12.3328 8.54736C12.31 8.65988 12.2485 8.7609 12.1591 8.83291C12.0691 8.90535 11.9565 8.94383 11.841 8.94162L11.841 8.94149H11.8282H6.19614V8.94137L6.18337 8.94162C6.06787 8.94383 5.95528 8.90535 5.8653 8.83291C5.77531 8.76048 5.71368 8.6587 5.69117 8.5454L5.69098 8.54444ZM4.55739 12.5054C4.55739 11.8175 5.1151 11.2597 5.80307 11.2597C6.49105 11.2597 7.04876 11.8175 7.04876 12.5054C7.04876 13.1934 6.49105 13.7511 5.80307 13.7511C5.1151 13.7511 4.55739 13.1934 4.55739 12.5054ZM10.9307 12.5054C10.9307 11.8175 11.4884 11.2597 12.1764 11.2597C12.8644 11.2597 13.4221 11.8175 13.4221 12.5054C13.4221 13.1934 12.8644 13.7511 12.1764 13.7511C11.4884 13.7511 10.9307 13.1934 10.9307 12.5054Z"
-                      fill="#2D3440" />
-                  </svg>
-                </a>
+              <a class="cart-price-link" href="#">
+                <svg width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M1.16667 0.25C0.798477 0.25 0.5 0.548477 0.5 0.916667C0.5 1.28486 0.798477 1.58333 1.16667 1.58333H2.93794L3.40537 3.91872C3.40821 3.93667 3.41176 3.95438 3.416 3.97182L4.38338 8.80515L4.3835 8.80571C4.46706 9.22572 4.69562 9.60299 5.02921 9.87153C5.36111 10.1387 5.77595 10.2813 6.20183 10.2748H11.8225C12.2484 10.2813 12.6633 10.1387 12.9952 9.87153C13.3289 9.60287 13.5575 9.22538 13.641 8.80515L13.641 8.80515L13.642 8.80016L14.5691 3.93872C14.6063 3.74355 14.5545 3.54195 14.4279 3.38887C14.3012 3.23578 14.1129 3.14716 13.9142 3.14716H4.61072L4.1381 0.785829C4.07574 0.474257 3.80215 0.25 3.4844 0.25H1.16667ZM5.69098 8.54444L4.87759 4.4805H13.1084L12.3328 8.54736C12.31 8.65988 12.2485 8.7609 12.1591 8.83291C12.0691 8.90535 11.9565 8.94383 11.841 8.94162L11.841 8.94149H11.8282H6.19614V8.94137L6.18337 8.94162C6.06787 8.94383 5.95528 8.90535 5.8653 8.83291C5.77531 8.76048 5.71368 8.6587 5.69117 8.5454L5.69098 8.54444ZM4.55739 12.5054C4.55739 11.8175 5.1151 11.2597 5.80307 11.2597C6.49105 11.2597 7.04876 11.8175 7.04876 12.5054C7.04876 13.1934 6.49105 13.7511 5.80307 13.7511C5.1151 13.7511 4.55739 13.1934 4.55739 12.5054ZM10.9307 12.5054C10.9307 11.8175 11.4884 11.2597 12.1764 11.2597C12.8644 11.2597 13.4221 11.8175 13.4221 12.5054C13.4221 13.1934 12.8644 13.7511 12.1764 13.7511C11.4884 13.7511 10.9307 13.1934 10.9307 12.5054Z"
+                    fill="#2D3440" />
+                </svg>
+              </a>
 
             </div>
           </li>
 
           <li class="catalog-inner-item">
-            <img class="ice-cart" src="images/ice-cart-3.png" width="145" height="37" alt="Logo device.">
+            <img class="ice-cart" src="images/ice-cart-3.png" width="145" height="37" alt="Ice-card.">
             <b class="catalog-cart-title">Черника</b>
             <span class="catalog-cart-d">Крем-брюле
               с черничным джемом</span>
             <div class="catalog-cart-price">
               <b class="cart-price">310 ₽/кг</b>
-              <a class="cart-price-link">
+              <a class="cart-price-link" href="#">
                 <svg width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" clip-rule="evenodd"
                     d="M1.16667 0.25C0.798477 0.25 0.5 0.548477 0.5 0.916667C0.5 1.28486 0.798477 1.58333 1.16667 1.58333H2.93794L3.40537 3.91872C3.40821 3.93667 3.41176 3.95438 3.416 3.97182L4.38338 8.80515L4.3835 8.80571C4.46706 9.22572 4.69562 9.60299 5.02921 9.87153C5.36111 10.1387 5.77595 10.2813 6.20183 10.2748H11.8225C12.2484 10.2813 12.6633 10.1387 12.9952 9.87153C13.3289 9.60287 13.5575 9.22538 13.641 8.80515L13.641 8.80515L13.642 8.80016L14.5691 3.93872C14.6063 3.74355 14.5545 3.54195 14.4279 3.38887C14.3012 3.23578 14.1129 3.14716 13.9142 3.14716H4.61072L4.1381 0.785829C4.07574 0.474257 3.80215 0.25 3.4844 0.25H1.16667ZM5.69098 8.54444L4.87759 4.4805H13.1084L12.3328 8.54736C12.31 8.65988 12.2485 8.7609 12.1591 8.83291C12.0691 8.90535 11.9565 8.94383 11.841 8.94162L11.841 8.94149H11.8282H6.19614V8.94137L6.18337 8.94162C6.06787 8.94383 5.95528 8.90535 5.8653 8.83291C5.77531 8.76048 5.71368 8.6587 5.69117 8.5454L5.69098 8.54444ZM4.55739 12.5054C4.55739 11.8175 5.1151 11.2597 5.80307 11.2597C6.49105 11.2597 7.04876 11.8175 7.04876 12.5054C7.04876 13.1934 6.49105 13.7511 5.80307 13.7511C5.1151 13.7511 4.55739 13.1934 4.55739 12.5054ZM10.9307 12.5054C10.9307 11.8175 11.4884 11.2597 12.1764 11.2597C12.8644 11.2597 13.4221 11.8175 13.4221 12.5054C13.4221 13.1934 12.8644 13.7511 12.1764 13.7511C11.4884 13.7511 10.9307 13.1934 10.9307 12.5054Z"
@@ -273,13 +273,13 @@
           </li>
 
           <li class="catalog-inner-item">
-            <img class="ice-cart" src="images/ice-cart-4.png" width="145" height="37" alt="Logo device.">
+            <img class="ice-cart" src="images/ice-cart-4.png" width="145" height="37" alt="Ice-card.">
             <b class="catalog-cart-title">Бабл-гам</b>
             <span class="catalog-cart-d">Ванильный пломбир
               со сладкой посыпкой</span>
             <div class="catalog-cart-price">
               <b class="cart-price">310 ₽/кг</b>
-              <a class="cart-price-link">
+              <a class="cart-price-link" href="#">
                 <svg width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" clip-rule="evenodd"
                     d="M1.16667 0.25C0.798477 0.25 0.5 0.548477 0.5 0.916667C0.5 1.28486 0.798477 1.58333 1.16667 1.58333H2.93794L3.40537 3.91872C3.40821 3.93667 3.41176 3.95438 3.416 3.97182L4.38338 8.80515L4.3835 8.80571C4.46706 9.22572 4.69562 9.60299 5.02921 9.87153C5.36111 10.1387 5.77595 10.2813 6.20183 10.2748H11.8225C12.2484 10.2813 12.6633 10.1387 12.9952 9.87153C13.3289 9.60287 13.5575 9.22538 13.641 8.80515L13.641 8.80515L13.642 8.80016L14.5691 3.93872C14.6063 3.74355 14.5545 3.54195 14.4279 3.38887C14.3012 3.23578 14.1129 3.14716 13.9142 3.14716H4.61072L4.1381 0.785829C4.07574 0.474257 3.80215 0.25 3.4844 0.25H1.16667ZM5.69098 8.54444L4.87759 4.4805H13.1084L12.3328 8.54736C12.31 8.65988 12.2485 8.7609 12.1591 8.83291C12.0691 8.90535 11.9565 8.94383 11.841 8.94162L11.841 8.94149H11.8282H6.19614V8.94137L6.18337 8.94162C6.06787 8.94383 5.95528 8.90535 5.8653 8.83291C5.77531 8.76048 5.71368 8.6587 5.69117 8.5454L5.69098 8.54444ZM4.55739 12.5054C4.55739 11.8175 5.1151 11.2597 5.80307 11.2597C6.49105 11.2597 7.04876 11.8175 7.04876 12.5054C7.04876 13.1934 6.49105 13.7511 5.80307 13.7511C5.1151 13.7511 4.55739 13.1934 4.55739 12.5054ZM10.9307 12.5054C10.9307 11.8175 11.4884 11.2597 12.1764 11.2597C12.8644 11.2597 13.4221 11.8175 13.4221 12.5054C13.4221 13.1934 12.8644 13.7511 12.1764 13.7511C11.4884 13.7511 10.9307 13.1934 10.9307 12.5054Z"
@@ -292,12 +292,12 @@
 
 
           <li class="catalog-inner-item">
-            <img class="ice-cart" src="images/ice-cart-2.1.png" width="145" height="37" alt="Logo device.">
+            <img class="ice-cart" src="images/ice-cart-2.1.png" width="145" height="37" alt="Ice-card.">
             <b class="catalog-cart-title">Ежевика</b>
             <span class="catalog-cart-d">Сливочное мороженое с ежевичным джемом</span>
             <div class="catalog-cart-price">
               <b class="cart-price">330 ₽/кг</b>
-              <a class="cart-price-link">
+              <a class="cart-price-link" href="#">
                 <span class="visually-hidden">Catalog-cart.</span>
                 <svg width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" clip-rule="evenodd"
@@ -309,13 +309,13 @@
           </li>
 
           <li class="catalog-inner-item">
-            <img class="ice-cart" src="images/ice-cart-2.2.png" width="145" height="37" alt="Logo device.">
+            <img class="ice-cart" src="images/ice-cart-2.2.png" width="145" height="37" alt="Ice-card.">
             <b class="catalog-cart-title">Банан</b>
             <span class="catalog-cart-d">Сливочный пломбир
               с банановым вкусом</span>
             <div class="catalog-cart-price">
               <b class="cart-price">340 ₽/кг</b>
-              <a class="cart-price-link">
+              <a class="cart-price-link" href="#">
                 <span class="visually-hidden">Catalog-cart.</span>
                 <svg width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" clip-rule="evenodd"
@@ -327,12 +327,12 @@
           </li>
 
           <li class="catalog-inner-item">
-            <img class="ice-cart" src="images/ice-cart-2.3.png" width="145" height="37" alt="Logo device.">
+            <img class="ice-cart" src="images/ice-cart-2.3.png" width="145" height="37" alt="Ice-card.">
             <b class="catalog-cart-title">Шоколадка</b>
             <span class="catalog-cart-d">Классический шоколадный пломбир</span>
             <div class="catalog-cart-price">
               <b class="cart-price">270 ₽/кг</b>
-              <a class="cart-price-link">
+              <a class="cart-price-link" href="#">
                 <span class="visually-hidden">Catalog-cart.</span>
                 <svg width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" clip-rule="evenodd"
@@ -345,13 +345,13 @@
           </li>
 
           <li class="catalog-inner-item">
-            <img class="ice-cart" src="images/ice-cart-2.4.png" width="145" height="37" alt="Logo device.">
+            <img class="ice-cart" src="images/ice-cart-2.4.png" width="145" height="37" alt="Ice-card.">
             <b class="catalog-cart-title">Клубничка</b>
             <span class="catalog-cart-d">Сливочный пломбир
               с клубничным вкусом</span>
             <div class="catalog-cart-price">
               <b class="cart-price">300 ₽/кг</b>
-              <a class="cart-price-link">
+              <a class="cart-price-link" href="#">
                 <span class="visually-hidden">Catalog-cart.</span>
                 <svg width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" clip-rule="evenodd"
@@ -365,12 +365,12 @@
 
 
           <li class="catalog-item">
-            <img class="ice-cart" src="images/ice-cart-3.1.png" width="145" height="37" alt="Logo device.">
+            <img class="ice-cart" src="images/ice-cart-3.1.png" width="145" height="37" alt="Ice-card.">
             <b class="catalog-cart-title">Лимон</b>
             <span class="catalog-cart-d">Освежающий лимонный сорбет</span>
             <div class="catalog-cart-price">
               <b class="cart-price">310 ₽/кг</b>
-              <a class="cart-price-link">
+              <a class="cart-price-link" href="#">
                 <span class="visually-hidden">Catalog-cart.</span>
                 <svg width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" clip-rule="evenodd"
@@ -382,13 +382,13 @@
           </li>
 
           <li class="catalog-item">
-            <img class="ice-cart" src="images/ice-cart-3.2.png" width="145" height="37" alt="Logo device.">
+            <img class="ice-cart" src="images/ice-cart-3.2.png" width="145" height="37" alt="Ice-card.">
             <b class="catalog-cart-title">Ментол</b>
             <span class="catalog-cart-d">Сливочный пломбир
               с ментоловым сиропом</span>
             <div class="catalog-cart-price">
               <b class="cart-price">320 ₽/кг</b>
-              <a class="cart-price-link">
+              <a class="cart-price-link" href="#">
                 <span class="visually-hidden">Catalog-cart.</span>
                 <svg width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" clip-rule="evenodd"
@@ -400,12 +400,12 @@
           </li>
 
           <li class="catalog-item">
-            <img class="ice-cart" src="images/ice-cart-3.3.png" width="145" height="37" alt="Logo device.">
+            <img class="ice-cart" src="images/ice-cart-3.3.png" width="145" height="37" alt="Ice-card.">
             <b class="catalog-cart-title">Орешек</b>
             <span class="catalog-cart-d">Фисташковый пломбир с шоколадным сиропом</span>
             <div class="catalog-cart-price">
               <b class="cart-price">360 ₽/кг</b>
-              <a class="cart-price-link">
+              <a class="cart-price-link" href="#">
                 <span class="visually-hidden">Catalog-cart.</span>
                 <svg width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" clip-rule="evenodd"
@@ -418,12 +418,12 @@
           </li>
 
           <li class="catalog-item">
-            <img class="ice-cart" src="images/ice-cart-3.4.png" width="145" height="37" alt="Logo device.">
+            <img class="ice-cart" src="images/ice-cart-3.4.png" width="145" height="37" alt="Ice-card.">
             <b class="catalog-cart-title">Крем-брюле</b>
             <span class="catalog-cart-d">Классическое крем-брюле </span>
             <div class="catalog-cart-price">
               <b class="cart-price">280 ₽/кг</b>
-              <a class="cart-price-link">
+              <a class="cart-price-link" href="#">
                 <span class="visually-hidden">Catalog-cart.</span>
                 <svg width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" clip-rule="evenodd"
@@ -522,7 +522,8 @@
 
           <ul class="footer__links-list">
             <li class="footer__links-item">
-              <a class="footer__links-link" href="#">Для поставщиков</a>
+              <span class="link-11"></span>
+              <a class="footer__links-link link-1" href="#">Для поставщиков</a>
             </li>
             <li class="footer__links-item">
               <a class="footer__links-link" href="#">Наши документы</a>
