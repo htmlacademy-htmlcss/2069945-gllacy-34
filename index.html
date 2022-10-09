@@ -96,7 +96,7 @@
                 <p class="field-group-login">
                   <label class="visually-hidden" for="subscribe-email">email</label>
                   <input class="field field-subscribe-login" placeholder="email@example.com" type="email"
-                    name="subscribe-email" id="subscribe-email">
+                    name="subscribe-form" id="popover-content-login">
                 </p>
 
                 <p class="field-group-login">
@@ -129,9 +129,9 @@
             </svg>
 
 
-            <div class="products">
+            <span class="products">
               2 товара
-            </div>
+            </span>
           </button>
 
 
@@ -450,22 +450,20 @@
               производства на развес</h2>
             <ul class="ceo-list">
               <li class="ceo-item">
-                <img class="icon-chocolate">
+                <span class="icon-chocolate"></span>
                 <span class="ceo-text">Всё наше мороженое изготавливается на собственном<br> производстве с
                   использованием
                   современного<br>
                   оборудования и проверенных временем технологий.</span>
               </li>
               <li class="ceo-item">
-                <img class="icon-cow">
-
+                <span class="icon-cow"></span>
                 <span class="ceo-text">Закупка ингредиентов производится только<br>
                   у проверенных фермерских хозяйств, с которыми<br>
                   нас связывает долговременное сотрудничество.</span>
               </li>
               <li class="ceo-item">
-                <img class="icon-leaf">
-
+                <span class="icon-leaf"></span>
                 <span class="ceo-text">Для приготовления мороженого используются сливки<br> и молоко высочайшего
                   качества.
                   Все
@@ -475,7 +473,7 @@
 
 
               <li class="ceo-item">
-                <img class="icon-termo">
+                <span class="icon-termo"></span>
                 <span class="ceo-text">Доставка нашего мороженого осуществляется в<br> специальном термопаке, который не
                   даёт
                   мороженому<br> растаять и позволяет сохранить превосходный вкус.</span>
@@ -508,7 +506,7 @@
                 <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
                   <div class="field-subscribe-one">
                     <input class="field field-subscribe" placeholder="email@example.com" type="email"
-                      name="subscribe-email" id="subscribe-email" required>
+                      name="subscribe-email" id="field-subscribe-one" required>
                     <button class="button-second button-subscribe" type="submit">Отправить</button>
                   </div>
                 </form>
@@ -591,7 +589,7 @@
                   placeholder="ул. Большая Конюшенная, 19/8">
               </div>
 
-              <button class="button-second button-delivery-send" type="send">Отправить</button>
+              <button class="button-second button-delivery-send" type="button">Отправить</button>
             </form>
           </div>
         </section>
@@ -616,8 +614,8 @@
           </div>
         </section>
       </div>
-      </div>
-      </section>
+
+
 
     </main>
 
@@ -709,19 +707,19 @@
 
           <form class="auth-form" action="https://echo.htmlacademy.ru/" method="post">
             <p class="field-group-login">
-              <label class="visually-hidden" for="">Имя</label>
+              <label class="visually-hidden" for="auth-login">Имя</label>
               <input class="auth-form-field field" type="text" id="auth-login" name="auth-login"
                 placeholder="Имя и фамилия">
             </p>
             <p class="field-group-login">
-              <label class="visually-hidden" for="subscribe-email">email</label>
+              <label class="visually-hidden" for="field-group-login">email</label>
               <input class="field auth-form-field" placeholder="email@example.com" type="email" name="subscribe-email"
-                id="subscribe-email">
+                id="field-group-login">
             </p>
             <p class="field-group-text">
               <label class="visually-hidden" for="auth-text">Text</label>
               <input class="field field-subscribe-text" placeholder="В свободной форме" type="text"
-                name="subscribe-email" id="subscribe-email">
+                name="subscribe-email" id="auth-text">
             </p>
 
           </form>
