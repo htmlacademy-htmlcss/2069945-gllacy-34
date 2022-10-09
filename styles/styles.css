@@ -464,8 +464,6 @@ body {
 .button-subscribe {
   text-decoration: none;
   min-width: 176px;
-
-
 }
 
 .button-apply {
@@ -510,8 +508,6 @@ body {
   border: 2px solid #b9b9b94d;
   cursor: default;
 }
-
-
 
 .carousel__preview {
   position: relative;
@@ -576,33 +572,45 @@ body {
 
 }
 
-.carousel__dots {
+
+.slider-pagination-list {
+  grid-row: 3/5;
   display: flex;
-  align-items: center;
+  flex-wrap: wrap;
+  min-width: 52px;
   justify-content: flex-start;
-  list-style: none;
-
+  list-style-type: none;
+  margin-top: -18px;
 }
 
-.carousel__dots li:not(:last-child) {
-  margin-right: 8px;
-
-}
-
-.carousel__dots li button {
-  width: 12px;
-  height: 12px;
-  background-color: #fff;
-  opacity: 0.3;
-  border: none;
+.slider-pagination-button {
+  display: block;
+  padding: 0;
+  width: 11px;
+  height: 11px;
+  box-sizing: content-box;
+  background-color: rgba(252, 252, 252, 0.3);
+  border: 1px solid rgba(252, 252, 252, 0.3);
   border-radius: 50%;
   cursor: pointer;
-
 }
 
-.carousel__dots .active button {
-  opacity: 1;
+.slider-button-current {
+  background-color: rgba(252, 252, 252, 1);
+}
 
+.slider-pagination-item:not(:last-child) {
+  margin-right: 8px;
+}
+
+.slider-pagination-button:hover {
+  background-color: rgba(252, 252, 252, 0.3);
+  border: 1px solid #fcfcfc;
+}
+
+.slider-pagination-button:focus {
+  background-color: rgba(252, 252, 252, 0.3);
+  border: 1px solid #000000;
 }
 
 .slider-controls {
