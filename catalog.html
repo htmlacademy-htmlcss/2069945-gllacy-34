@@ -6,8 +6,9 @@
     <title>HTML Academy: Глейси</title>
 
     <link rel="stylesheet" href="styles/styles.css">
+    <link rel="icon" href="favicon-32x32.ico"> <!-- 32×32 -->
+    <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon-32x32.png">
 
-    <link rel="icon" href="favicon.ico">
   </head>
 
   <body>
@@ -82,6 +83,7 @@
 
     </header>
 
+      <!--main-->
     <main>
       <section class="main-catalog-title">
         <div class="container">
@@ -90,7 +92,7 @@
               <a class="breadcrumbs-link" href="index.html">Главная</a>
             </li>
 
-            <li class="breadcrumbs-item">Каталог</li>
+            <li class="breadcrumbs-item breadcrambs-link-current">Каталог</li>
           </ul>
 
 
@@ -98,124 +100,164 @@
         </div>
       </section>
 
-
+      <!--select-->
 
       <section class="filters">
         <div class="container">
-          <form class="filters__form" action="" method="get">
+          <form class="filter-form" action="https://echo.htmlacademy.ru" method="get">
             <div class="form-row">
               <div class="form-group sort">
                 <label class="ingredient-title">Сортировка:</label>
-                <select class="select-control" aria-label="Сортировка">
+                <select class="select-control filter-border" aria-label="Сортировка">
                   <option value="popular">по популярности</option>
                   <option value="cheap">по цене</option>
-
+                  <option value="expensive">по колорийности</option>
                 </select>
               </div>
 
+              <!--renge scale-->
 
+              <div class="form-group filter-price">
 
+                <label class="renge-price">Цена: <span>100</span> ₽ – <span>500</span> ₽</label>
 
-              <div class="form-group price">
-                <div class="range-wrapper-inputs">
-                  <label class="form-group-range">
-                    Цена: <input class="range-input" type="number" value="100" name="min-price"> ₽</label>
-                  <label class="form-group-range">
-                    <input class="range-input" type="number" value="-500" name="max-price">
-                    ₽</label>
-                </div>
-                <div class="range">
-                  <div class="range-scale">
-                    <div class="range-bar" style="left: 28px; width: 72px">
-                      <button class="range-toggle toggle-min">
+                <div class="range-wrapper filter-border">
+
+                  <div class="filter-scale">
+
+                    <div class="filter-bar">
+
+                      <button class="filter-toggle filter-toggle-min" type="button">
+
                         <span class="visually-hidden">Изменить минимальную цену.</span>
                       </button>
-                      <button class="range-toggle toggle-max">
+
+                      <button class="filter-toggle filter-toggle-max" type="button">
+
                         <span class="visually-hidden">Изменить максимальную цену.</span>
                       </button>
                     </div>
                   </div>
+                </div>
 
+              </div>
+
+              <!--filter fat-->
+
+              <div class="form-group fat">
+
+                <span>Жирность:</span>
+
+                <div class="input-group filter-border">
+
+                  <label class="control-radio">
+
+                    <input class="visually-hidden control-input-radio" type="radio" name="fat">
+
+                    <span class="control-mark-radio"></span>
+
+                    <span class="imput-data">0%</span>
+
+                  </label>
+
+                  <label class="control-radio">
+
+                    <input class="visually-hidden control-input-radio" type="radio" name="fat" checked>
+
+                    <span class="control-mark-radio"></span>
+
+                    <span class="imput-data">до 10%</span>
+
+                  </label>
+
+                  <label class="control-radio">
+
+                    <input class="visually-hidden control-input-radio" type="radio" name="fat">
+
+                    <span class="control-mark-radio"></span>
+
+                    <span class="imput-data">до 30%</span>
+
+                  </label>
+
+                  <label class="control-radio">
+
+                    <input class="visually-hidden control-input-radio" type="radio" name="fat">
+
+                    <span class="control-mark-radio"></span>
+
+                    <span class="imput-data">выше 30%</span>
+                  </label>
+                </div>
+              </div>
+            </div>
+
+            <!--filter filler-->
+
+            <div class="form-row">
+
+              <div class="filter-ingridients">
+
+                <span class="filter-title">Наполнители:</span>
+
+                <div class="input-group filter-border filler">
+
+                  <label>
+
+                    <input class="visually-hidden checkbox-input" type="checkbox" name="ingridients" checked>
+
+                    <span class="filter-check filter-check-box"></span>
+
+                    <span class="imput-data title-ingridients">шоколадные</span>
+                  </label>
+
+                  <label>
+
+                    <input class="visually-hidden checkbox-input" type="checkbox" name="ingridients" checked>
+
+                    <span class="filter-check filter-check-box"></span>
+
+                    <span class="imput-data title-ingridients">сахарные посыпки</span>
+                  </label>
+
+                  <label>
+
+                    <input class="visually-hidden checkbox-input" type="checkbox" name="ingridients">
+
+                    <span class="filter-check filter-check-box"></span>
+
+                    <span class="imput-data title-ingridients">фрукты</span>
+                  </label>
+
+                  <label>
+
+                    <input class="visually-hidden checkbox-input" type="checkbox" name="ingridients">
+
+                    <span class="filter-check filter-check-box"></span>
+
+                    <span class="imput-data title-ingridients">сиропы</span>
+                  </label>
+
+                  <label>
+
+                    <input class="visually-hidden checkbox-input" type="checkbox" name="ingridients">
+
+                    <span class="filter-check filter-check-box"></span>
+
+                    <span class="imput-data title-ingridients">джемы</span>
+                  </label>
                 </div>
               </div>
 
 
-              <fieldset class="form-group fat">
-                <legend class="ingredient-title">Жирность:</legend>
-                <div class="input-group">
-                  <label class="fat-item">
-                    <input type="radio" name="fat">
-                    <span class="control-fat"></span>
-                    <span class="control-label">0%</span>
-                  </label>
 
-                  <label class="fat-item">
-                    <input type="radio" name="fat" checked>
-                    <span class="control-fat"></span>
-                    <span class="control-label">до 10% </span>
-                  </label>
-                  <label class="fat-item">
-                    <input type="radio" name="fat">
-                    <span class="control-fat"></span>
-                    <span class="control-label">до 30% </span>
-                  </label>
-
-                  <label class="fat-item">
-                    <input type="radio" name="fat">
-                    <span class="control-fat"></span>
-                    <span class="control-label">выше 30% </span>
-                  </label>
-
-                </div>
-              </fieldset>
-
-            </div>
-
-
-            <div class="form-row">
-              <fieldset class="form-group ingredient">
-                <legend class="ingredient-title">Наполнители:</legend>
-                <div class="input-group-ingredient">
-
-                  <label class="control">
-
-                    <input class="visually-hidden control-input" type="checkbox" name="ingredient" checked>
-                    <span class="control-ingredients"></span>
-                    <span class="control-label">шоколадные</span>
-                  </label>
-
-                  <label class="control">
-                    <input class="visually-hidden control-input" type="checkbox" name="ingredient" checked>
-                    <span class="control-ingredients"></span>
-                    <span class="control-label">сахарные посыпки</span>
-                  </label>
-                  <label class="control">
-                    <input class="visually-hidden control-input" type="checkbox" name="ingredient">
-                    <span class="control-ingredients"></span>
-                    <span class="control-label">фрукты</span>
-                  </label>
-
-                  <label class="control">
-                    <input class="visually-hidden control-input" type="checkbox" name="ingredient">
-                    <span class="control-ingredients"></span>
-                    <span class="control-label">сиропы</span>
-                  </label>
-
-                  <label class="control">
-                    <input class="visually-hidden control-input" type="checkbox" name="ingridient">
-                    <span class="control-ingredients"></span>
-                    <span class="control-label">джемы</span>
-                  </label>
-
-                </div>
-              </fieldset>
               <button class="button-apply" type="submit">Применить</button>
             </div>
           </form>
         </div>
       </section>
 
-
+      <!--catalog product list-->
 
       <div class="container">
 
@@ -288,8 +330,6 @@
               </a>
             </div>
           </li>
-
-
 
           <li class="catalog-inner-item">
             <img class="ice-cart" src="images/ice-cart-2.1.png" width="145" height="37" alt="Ice-card.">
@@ -475,9 +515,7 @@
 
     </main>
 
-
-
-
+   <!--footer-->
 
     <footer class="footer">
       <div class="container">

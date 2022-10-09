@@ -6,8 +6,8 @@
     <title>HTML Academy: Глейси</title>
 
     <link rel="stylesheet" href="styles/styles.css">
-
-    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="favicon-32x32.ico"> <!-- 32×32 -->
+    <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon-32x32.png">
   </head>
 
   <body>
@@ -77,15 +77,7 @@
 
             </form>
 
-
-
           </div>
-
-
-
-
-
-
 
           <button type="button" class="header__login header__btn">
             <svg class="icon">
@@ -115,24 +107,6 @@
               </form>
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
               <div class="login-pp">
                 <a class="button-second button-login" href="#">Войти</a>
                 <div class="login-links">
@@ -145,13 +119,6 @@
             </div>
 
           </div>
-
-
-
-
-
-
-
 
 
           <button type="button" class="header__cart header__btn">
@@ -176,11 +143,11 @@
 
               <ul class="cart-items-list">
                 <li class="cart-item">
-                  <img class="ice-pp" src="images/ice-cart-1.png" width="145" height="37" alt="Ice-card.">
+                  <img class="ice-pp" src="images/ice-cart-1.png" width="145" height="37" alt="Raspberry.">
 
 
                   <div class="cart-item-description">
-                    <p class="cart-item-title">Малинка</p>
+                    <a class="cart-item-title" href="#">Малинка</a>
 
                     <span class="cart-item-price">1 кг х 310 ₽</span>
                   </div>
@@ -198,11 +165,11 @@
 
 
                 <li class="cart-item">
-                  <img class="ice-pp" src="images/ice-cart-4.png" width="145" height="37" alt="Ice-card.">
+                  <img class="ice-pp" src="images/ice-cart-4.png" width="145" height="37" alt="Bubble.">
 
 
                   <div class="cart-item-description">
-                    <p class="cart-item-title">Бабл-гам</p>
+                    <a class="cart-item-title" href="#">Бабл-гам</a>
 
                     <span class="cart-item-price">1,5 кг х 320 ₽</span>
                   </div>
@@ -239,19 +206,11 @@
               Ваша корзина пока<br> пуста
             </span>
           </div>
-
-
-
-
         </div>
 
       </div>
 
     </header>
-
-
-
-
     <main>
       <section class="main-carousel">
         <h3 class="visually-hidden">Carousel-title</h3>
@@ -294,8 +253,6 @@
 
                   </svg>
                 </button>
-
-
 
                 <ul>
                   <li class="first-slide active">
@@ -583,37 +540,62 @@
             <h2 class="visually-hidden">delivery</h2>
             <p class="delivery-info">Укажите адрес и дату доставки, и мы свяжемся с вами, чтобы подтвердить заказ.</p>
             <form class="delivery-form" action="https://echo.htmlacademy.ru/" method="post">
-              <p class="field-group">
+              <div class="field-group delivery-form-date">
+                <div class="form-label">
+                  <label class="form-label" for="delivery-date">
+                    Дата</label>
 
-                <label class="form-label delivery-form-date" for="delivery-date">
-                  Дата</label>
+                  <button class="tooltip-button" type="button">
 
+                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M7.00026 2.12508C4.30774 2.12508 2.12502 4.3078 2.12502 7.00032C2.12502 9.69284 4.30774 11.8756 7.00026 11.8756C9.69278 11.8756 11.8755 9.69284 11.8755 7.00032C11.8755 4.3078 9.69278 2.12508 7.00026 2.12508ZM0.791687 7.00032C0.791687 3.57142 3.57136 0.791748 7.00026 0.791748C10.4292 0.791748 13.2088 3.57142 13.2088 7.00032C13.2088 10.4292 10.4292 13.2089 7.00026 13.2089C3.57136 13.2089 0.791687 10.4292 0.791687 7.00032ZM7.00007 6.3334C7.36826 6.3334 7.66674 6.63188 7.66674 7.00007V9.21683C7.66674 9.58502 7.36826 9.8835 7.00007 9.8835C6.63188 9.8835 6.33341 9.58502 6.33341 9.21683V7.00007C6.33341 6.63188 6.63188 6.3334 7.00007 6.3334ZM7.00007 4.11665C6.63188 4.11665 6.33341 4.41513 6.33341 4.78332C6.33341 5.1515 6.63188 5.44998 7.00007 5.44998H7.0059C7.37409 5.44998 7.67257 5.1515 7.67257 4.78332C7.67257 4.41513 7.37409 4.11665 7.0059 4.11665H7.00007Z"
+                        fill="#2D3440" />
+                    </svg>
+
+                    <span class="tooltip-text" id="tooltip-date" role="tooltip">Введите дату доставки</span>
+                  </button>
+                </div>
                 <input class="field" type="text" id="delivery-date" name="delivery-date" placeholder="01.04.2020">
-              </p>
+              </div>
 
-              <p class="field-group delivery-form-phone">
+              <div class="field-group delivery-form-phone">
                 <label class="form-label" for="delivery-phone">
                   Телефон
                 </label>
                 <input class="field" type="text" id="delivery-phone" name="delivery-phone"
                   placeholder="+7 800 999-00-00">
-              </p>
+              </div>
 
-              <p class="field-group delivery-form-address">
-                <label class="form-label" for="delivery-address">
-                  Адрес
-                </label>
+
+              <div class="field-group delivery-form-address">
+                <div class="form-label">
+                  <label class="form-label" for="delivery-address">
+                    Адрес
+                  </label>
+
+                  <button class="tooltip-button" type="button">
+
+                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M7.00026 2.12508C4.30774 2.12508 2.12502 4.3078 2.12502 7.00032C2.12502 9.69284 4.30774 11.8756 7.00026 11.8756C9.69278 11.8756 11.8755 9.69284 11.8755 7.00032C11.8755 4.3078 9.69278 2.12508 7.00026 2.12508ZM0.791687 7.00032C0.791687 3.57142 3.57136 0.791748 7.00026 0.791748C10.4292 0.791748 13.2088 3.57142 13.2088 7.00032C13.2088 10.4292 10.4292 13.2089 7.00026 13.2089C3.57136 13.2089 0.791687 10.4292 0.791687 7.00032ZM7.00007 6.3334C7.36826 6.3334 7.66674 6.63188 7.66674 7.00007V9.21683C7.66674 9.58502 7.36826 9.8835 7.00007 9.8835C6.63188 9.8835 6.33341 9.58502 6.33341 9.21683V7.00007C6.33341 6.63188 6.63188 6.3334 7.00007 6.3334ZM7.00007 4.11665C6.63188 4.11665 6.33341 4.41513 6.33341 4.78332C6.33341 5.1515 6.63188 5.44998 7.00007 5.44998H7.0059C7.37409 5.44998 7.67257 5.1515 7.67257 4.78332C7.67257 4.41513 7.37409 4.11665 7.0059 4.11665H7.00007Z"
+                        fill="#2D3440" />
+                    </svg>
+
+                    <span class="tooltip-text" id="tooltip-adress" role="tooltip">Введите название улицы, дома и
+                      квартиры</span>
+                  </button>
+
+                </div>
                 <input class="field" type="text" id="delivery-address" name="delivery-address"
                   placeholder="ул. Большая Конюшенная, 19/8">
-              </p>
+              </div>
+
               <button class="button-second button-delivery-send" type="send">Отправить</button>
             </form>
           </div>
-
-
         </section>
       </div>
-
 
 
       <div class="container">
@@ -632,15 +614,8 @@
 
             <a class="button-second button-contacts" href="#">Форма обратной связи</a>
           </div>
-
-
-
         </section>
       </div>
-
-
-
-
       </div>
       </section>
 
@@ -650,9 +625,6 @@
     <footer class="footer">
       <div class="container">
         <div class="footer_nav">
-
-
-
 
           <ul class="carousel__social">
             <li>
@@ -713,14 +685,6 @@
 
               <img src="../images/logo_htmlacademy.svg" alt="HTML Academy logo." width="93" height="27">
             </a>
-
-
-
-
-
-
-
-
 
             <div class="footer__copyright-link">
               <span class="footer__copyright-text">Сделано в
