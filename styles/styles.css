@@ -644,7 +644,7 @@ body {
   cursor: pointer;
   left: 1%;
   top: 50%;
-
+  z-index: 1;
 }
 
 .button-next {
@@ -1546,31 +1546,33 @@ body {
 
 .footer__links-item {
   width: 50%;
+  font-family: 'Inter', "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
 
+}
+
+.footer__links-item-bold {
+  font-family: 'Inter', "Arial", sans-serif;
+  position: relative;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
 }
 
 
 .footer__links-link {
   text-decoration: none;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 20px;
   color: #2D3440;
-
 }
 
-.link-1 {
-  position: relative;
-  font-family: 'Inter', "Arial", sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 20px;
 
-}
-
-.link-11 {
+.footer__links-item-bold::before {
   content: "";
   position: absolute;
   background-image: url("../images/icon-like.svg");
@@ -1578,7 +1580,7 @@ body {
   background-repeat: no-repeat;
   width: 14px;
   height: 14px;
-  left: 740px;
+  left: -25px;
 }
 
 
