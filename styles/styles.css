@@ -352,7 +352,7 @@ body {
 
 .main-carousel {
   margin-bottom: 70px;
-  margin-top: 28px;
+  margin-top: 38px;
 }
 
 .carousel-top {
@@ -360,11 +360,12 @@ body {
   justify-content: space-between;
   padding-left: 70px;
   padding-right: 17px;
+  margin-bottom: 20px;
 }
 
 .carousel__content {
   width: 470px;
-  padding-top: 130px;
+  padding-top: 120px;
   margin: 0;
 }
 
@@ -569,7 +570,7 @@ body {
 }
 
 .carousel__preview .active img {
-  max-width: 306px;
+  max-width: 290px;
   position: relative;
 }
 
@@ -641,7 +642,7 @@ body {
   border: 2px solid #FCFCFC;
   border-radius: 26px;
   cursor: pointer;
-  left: 3%;
+  left: 1%;
   top: 50%;
 
 }
@@ -1577,7 +1578,7 @@ body {
   background-repeat: no-repeat;
   width: 14px;
   height: 14px;
-  left: 730px;
+  left: 740px;
 }
 
 
