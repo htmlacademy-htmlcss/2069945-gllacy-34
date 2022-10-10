@@ -1445,7 +1445,6 @@ body {
   box-sizing: border-box;
   border-radius: 16px;
   padding: 64px;
-  margin-bottom: 44px;
   background-image: url("../images/background-contact.jpg");
   background-repeat: no-repeat;
 }
@@ -1514,7 +1513,9 @@ body {
 }
 
 
-
+.footer {
+  padding: 18px 0 48px 0;
+}
 
 .footer_nav {
   display: flex;
@@ -1530,8 +1531,6 @@ body {
   align-items: center;
 
 }
-
-
 
 
 .footer__links-list {
@@ -1610,6 +1609,7 @@ body {
   cursor: pointer;
   margin-bottom: 18px;
   margin-left: 50px;
+  margin-top: 20px;
 }
 
 .developer-link {
@@ -2082,7 +2082,7 @@ label:not(:last-child) .title-ingridients {
   display: flex;
   align-items: center;
   width: 1170px;
-  margin-bottom: 110px;
+  margin-bottom: 85px;
   justify-content: flex-end;
 }
 
@@ -2090,10 +2090,6 @@ label:not(:last-child) .title-ingridients {
   display: flex;
   align-items: center;
   justify-content: space-between;
-
-
-
-
 }
 
 .pagination-list {
