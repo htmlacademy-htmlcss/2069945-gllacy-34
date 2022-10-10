@@ -141,18 +141,19 @@ body {
 
 .navigation-link:hover {
   background: rgba(252, 252, 252, 0.5);
-
+  color: #2D3440;
 
 }
 
 .navigation-link:focus {
   background: rgba(252, 252, 252, 0.5);
   border: 2px solid #2D3440;
+  color: #2D3440;
 }
 
 .navigation-link:active {
   background: #FCFCFC;
-
+  color: #2D3440;
 }
 
 
